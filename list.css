@@ -1,0 +1,133 @@
+.form-control {    
+    display: flex;
+}
+.form-control input {    
+    width: 100%;      
+    padding: 23px;
+    border-radius: 19px;
+}
+.form-control button {    
+    background-color: green; 
+    border-radius: 13px;
+    margin-left: -61px;
+    width: 71px;
+    height: 65px;
+    color: aqua;
+
+}
+.date-hour {    
+    display: flex;    
+     justify-content: space-around;    
+    align-items: center;
+    margin: 0px 25px;        
+    font-size: 31px;    
+    color: red;
+    font-weight: bold;
+    border-bottom: 3px solid brown;
+}
+button {    
+    background-color: darkorange;    
+    color: darkgreen;       
+    padding: 5px 9px;    
+    font-size: 19px;    
+    cursor: pointer;    
+    justify-content: center;    
+    align-items: center;
+    margin-left: 31px;
+    
+}
+button > i {    
+    font-weight: bold;    
+    pointer-events: none;
+}
+.hide {    
+    display: none;
+}
+.todo-container {    
+    background-color: yellowgreen;    
+    border-radius: 25px;   
+    width: 550px;    
+    margin: 35px auto;    
+    padding: 11px;
+}
+ .todo-container header {    
+    padding: 0 3px 3px;    
+    border-bottom: 3px solid brown ;
+}
+header > h1 {   
+    text-align: center;
+    color: darkblue;
+    font-weight: bold;
+}
+#todo-form, #edit-form {    
+    padding: 3px;
+    margin-bottom: 5px;    
+    border-bottom: 1px solid brown;
+}
+#todo-form > p, #edit-form > p {    
+    margin-bottom: 1px;    
+    font-weight: bold;
+}
+.form-control > input {    
+    margin-right: 3px;
+}
+#cancel-edit-btn {    
+    margin-top: 19px;
+}
+.todo {    
+    display: flex;   
+    justify-content: space-around;    
+    align-items: center;    
+    padding: 3px 5px;       
+    transition: .3s;
+    background-color: blue;
+    border-radius: 15px;
+    margin-bottom: 11px;
+    margin-bottom: 7px;
+}
+.todo h3 {    
+    flex: 1;    
+    font-size: 15px;
+}
+.todo button {    
+    margin-left: 0.4rem;    
+    border-radius: 50%;    
+    width: 40px;    
+    height: 40px;    
+    border: none;    
+    background: #ecf0f1;
+}
+.done {    
+    background-color: green;
+}
+.done h3 {
+    color: white;   
+    text-decoration: line-through;    
+    font-style: italic;
+}
+.todo button, .done button {    
+    background-color: red;    
+    color: pink;
+} 
+ .done > button {    
+    background-color: pink;    
+    color: blue;
+}
+#todo-list {    
+    max-height: 220px;    
+    overflow: auto;
+}
+
+
+@media (max-width: 600px){
+    .todo-container{
+        width: 371px;
+        margin-left: 5px;
+    }
+    .date-hour{
+        font-size: 21px;
+    }
+    #todo-form h1{
+        text-align: center;
+    }
+}
